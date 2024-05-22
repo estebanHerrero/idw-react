@@ -1,4 +1,3 @@
 Grupo
 
-Venturini, Paola Andrea
-Herrero, Esteban Lucas
+Venturini, Paola Andrea - Herrero, Esteban Lucas

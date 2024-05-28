@@ -4,7 +4,7 @@ import { faCalendarAlt, faEarthAmericas, faSearch, faBed } from '@fortawesome/fr
 
 export function SearchBar() {
     return (
-        <div className="bg-[#F6FDC3] px-4 py-2 flex justify-center">
+        <div className="bg-[#F6FDC3] px-4 py-6 flex justify-center">
             <div className='bg-[#CDFADB] px-4 py-2 flex items-center justify-between w-[1000px] rounded-xl'>
                 {/* Sección 1: Donde queres ir? */}
                 <div className="flex-shrink-0 bg-[#FFCF96] p-2 px-8 rounded">

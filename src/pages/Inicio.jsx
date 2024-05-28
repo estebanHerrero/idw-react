@@ -1,9 +1,9 @@
 import React from 'react';
-import nhow from '../assets/destinoTendencia/nhow.png';
 import kimpton from '../assets/destinoTendencia/kimpton.png';
 import presidential from '../assets/destinoTendencia/presidential.png';
-import kiphotel from '../assets/destinoTendencia/kiphotel.png';
-import marriot from '../assets/destinoTendencia/marriot.png';
+import kiph from '../assets/destinoTendencia/kiph.png';
+import marrioth from '../assets/destinoTendencia/marrioth.png';
+import nhow from '../assets/destinoTendencia/nhow.jpeg';
 
 
 
@@ -11,13 +11,13 @@ import marriot from '../assets/destinoTendencia/marriot.png';
 export function Inicio() {
     return (
         <div className="bg-[#F6FDC3] py-16  flex justify-center">
-            <div className="container mx-auto px-4 w-[1100px]">
+            <div className="container mx-auto px-4 w-[1200px]">
                 {/* Hero Heading */}
                 <h1 className="text-4xl font-bold text-gray-800 mb-8">Destino tendencia</h1>
 
                 {/* Image Gallery */}
-                <div className="grid grid-cols-4 gap-4">
-                    <div className="row-span-2 col-span-2 relative">
+                <div className="grid grid-cols-4 grid-rows-3 gap-4">
+                    <div className="row-span-3 col-span-2 relative">
                         <img src={kimpton} alt="Kimpton Hotel" className="h-full w-full object-cover rounded-3xl" />
                         <div className="absolute top-0 w-full bg-gray-700 opacity-60 p-4 rounded-3xl text-[#d9d9d9]">
                             <h2 className="font-bold text-2xl">Kimpton Fitzroy London</h2>
@@ -26,7 +26,7 @@ export function Inicio() {
                             <h5 className="text-base">9.1 - Excelente</h5>
                         </div>
                     </div>
-                    <div className="relative">
+                    <div className="row-span-1 relative">
                         <img src={nhow} alt="nHow Hotel" className="h-full w-full object-cover rounded-3xl" />
                         <div className="absolute top-0 w-full bg-gray-700 opacity-60 p-4 rounded-3xl text-[#d9d9d9]">
                             <h2 className="font-bold text-xl">nHow, London</h2>
@@ -35,8 +35,8 @@ export function Inicio() {
                             <h5 className="text-base">9.2 - Excelente</h5>
                         </div>
                     </div>
-                    <div className="relative">
-                        <img src={presidential} alt="Presidential Hotel" className="h-full w-full object-cover" />
+                    <div className="row-span-2 relative">
+                        <img src={presidential} alt="Presidential Hotel" className="h-full w-full object-cover rounded-3xl" />
                         <div className="absolute top-0 w-full bg-gray-700 opacity-60 p-4 rounded-3xl text-[#d9d9d9]">
                             <h2 className="font-bold text-xl">Presidential Apart</h2>
                             <h4 className="text-base">Hotel</h4>
@@ -45,8 +45,8 @@ export function Inicio() {
                             <h5 className="text-base">8.2 - Muy bueno</h5>
                         </div>
                     </div>
-                    <div className="relative">
-                        <img src={kiphotel} alt="Kip Hotel" className="h-full w-full object-cover" />
+                    <div className="row-span-2 relative">
+                        <img src={kiph} alt="Kip Hotel" className="h-full w-full object-cover rounded-3xl" />
                         <div className="absolute top-0 w-full bg-gray-700 opacity-60 p-4 rounded-3xl text-[#d9d9d9]">
                             <h2 className="font-bold text-xl">Kip Hotel</h2>
                             <h4 className="text-base">Hotel</h4>
@@ -55,8 +55,8 @@ export function Inicio() {
                             <h5 className="text-base">8.2 - Muy bueno</h5>
                         </div>
                     </div>
-                    <div className="relative">
-                        <img src={marriot} alt="Marriot Hotel" className="h-full w-full object-cover rounded-3xl" />
+                    <div className="row-span-2 relative">
+                        <img src={marrioth} alt="Marriot Hotel" className="h-full w-full object-cover rounded-3xl" />
                         <div className="absolute top-0 w-full bg-gray-700 opacity-60 p-4 rounded-3xl text-[#d9d9d9]">
                             <h2 className="font-bold text-xl">Marriot House</h2>
                             <h4 className="text-base">Hotel</h4>

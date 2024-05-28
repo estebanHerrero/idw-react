@@ -4,7 +4,7 @@ import Logo from '../assets/logoidw.png';
 
 export function Header() {
     return (
-        <header className="bg-[#F6FDC3] shadow-md flex items-center justify-between p-4 h-24">
+        <header className="bg-[#F6FDC3] shadow-md flex items-center justify-between p-4 px-12 h-24">
         {/* Logotipo a la izquierda */}
         <div className="flex-shrink-0">
           <a href="/"><img src={Logo} alt="Logotipo" className="w-28" /></a>

@@ -17,9 +17,9 @@ export function Footer() {
                 </div>
             </div>
             <div className='flex mb-32'>
-                <FontAwesomeIcon icon={faEarthAmericas} className="text-gray-500 ml-2 text-3xl mr-4" />
-                <FontAwesomeIcon icon={faEarthAmericas} className="text-gray-500 ml-2 text-3xl mr-4" />
-                <FontAwesomeIcon icon={faEarthAmericas} className="text-gray-500 ml-2 text-3xl mr-4" />
+                <FontAwesomeIcon icon={faEarthAmericas} className="text-gray-700 ml-2 text-3xl mr-4" />
+                <FontAwesomeIcon icon={faEarthAmericas} className="text-gray-700 ml-2 text-3xl mr-4" />
+                <FontAwesomeIcon icon={faEarthAmericas} className="text-gray-700 ml-2 text-3xl mr-4" />
             </div>
             <div>
                 <h3 className='text-gray-700 text-xl font-bold mb-2 justify-center items-center'>Ayuda</h3>

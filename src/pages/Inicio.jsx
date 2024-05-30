@@ -17,7 +17,7 @@ import Carousel from '../components/Carousel';
 export function Inicio() {
 
         return (
-        <div className="bg-[#F6FDC3] py-16  flex justify-center">
+        <div className="bg-[#F6FDC3] py-16  flex justify-center px-20">
             <div className="container mx-auto px-4 w-[1200px]">
 
                 {/* Destino  Tendencia */}

@@ -1,6 +1,10 @@
 import React from 'react';
 
 
-export function mejorAlojamiento() {
-    return <h1>Aloja</h1>;
+export function Alojamiento() {
+    return (
+        <div>
+            <h1>Alojaaa</h1>
+        </div>    
+    )
 }

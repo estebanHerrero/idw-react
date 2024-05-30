@@ -11,17 +11,18 @@ import Carousel from '../components/Carousel';
 
 
 
+
+
 export function Inicio() {
 
         return (
         <div className="bg-[#F6FDC3] py-16  flex justify-center">
             <div className="container mx-auto px-4 w-[1200px]">
-                {/* Hero */}
-                <h1 className="text-4xl font-bold text-gray-800 mb-8">Destino tendencia</h1>
 
                 {/* Destino  Tendencia */}
-                <div className="grid grid-cols-4 grid-rows-3 gap-4">
-                    <div className="row-span-3 col-span-2 relative">
+                <h1 className="text-4xl font-bold text-gray-800 mb-8">Destino tendencia</h1>
+                <div className="grid grid-cols-4 grid-rows-5 gap-4">
+                    <div className="row-span-5 col-span-2 relative">
                         <img src={kimpton} alt="Kimpton Hotel" className="h-full w-full object-cover rounded-3xl" />
                         <div className="absolute top-0 w-full bg-gray-700 opacity-60 p-4 rounded-3xl text-[#d9d9d9]">
                             <h2 className="font-bold text-2xl">Kimpton Fitzroy London</h2>
@@ -30,7 +31,7 @@ export function Inicio() {
                             <h5 className="text-base">9.1 - Excelente</h5>
                         </div>
                     </div>
-                    <div className="row-span-2 relative">
+                    <div className="row-span-3 relative">
                         <img src={nhow} alt="nHow Hotel" className="h-full w-full object-cover rounded-3xl" />
                         <div className="absolute top-0 w-full bg-gray-700 opacity-60 p-4 rounded-3xl text-[#d9d9d9]">
                             <h2 className="font-bold text-xl">nHow, London</h2>
@@ -47,7 +48,7 @@ export function Inicio() {
                             <h5 className="text-base">8.2 - Muy bueno</h5>
                         </div>
                     </div>
-                    <div className="row-span-2 relative">
+                    <div className="row-span-4 relative">
                         <img src={kiph} alt="Kip Hotel" className="h-full w-full object-cover rounded-3xl" />
                         <div className="absolute top-0 w-full bg-gray-700 opacity-60 p-4 rounded-3xl text-[#d9d9d9]">
                             <h2 className="font-bold text-xl">Kip Hotel</h2>
@@ -68,7 +69,12 @@ export function Inicio() {
                 </div>
 
                 {/* Especial Caribe */}
+                <br />
                 <Carousel />
+
+                {/* Elige tu mejor alojamiento */}
+                
+                
             </div>
         </div>
     )

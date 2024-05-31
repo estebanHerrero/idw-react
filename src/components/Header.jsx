@@ -8,7 +8,7 @@ export function Header() {
 
           {/* Logotipo a la izquierda */}
           <div className="flex-shrink-0">
-            <a href="/"><img src={Logo} alt="Logotipo" className="w-28" /></a>
+            <a href="/"><img src={Logo} alt="Logotipo" className="w-32 pt-6" /></a>
           </div>
   
           {/* Navegación a la derecha */}

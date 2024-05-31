@@ -2,7 +2,8 @@ import React from 'react';
 import Logo from '../assets/logoidw.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEarthAmericas } from '@fortawesome/free-solid-svg-icons';
-
+import Facebook from '../assets/facebookl.svg';
+import { RiInstagramLine, RiFacebookCircleFill, RiTwitterXLine } from '@remixicon/react';
 
 
 export function Footer() {
@@ -17,6 +18,9 @@ export function Footer() {
                 </div>
             </div>
             <div className='flex mb-32'>
+                <i class="ri-facebook-circle-fill"></i>
+                <i class="ri-instagram-line"></i>
+                <i class="ri-twitter-x-line"></i>
                 <FontAwesomeIcon icon={faEarthAmericas} className="text-gray-700 ml-2 text-3xl mr-4" />
                 <FontAwesomeIcon icon={faEarthAmericas} className="text-gray-700 ml-2 text-3xl mr-4" />
                 <FontAwesomeIcon icon={faEarthAmericas} className="text-gray-700 ml-2 text-3xl mr-4" />

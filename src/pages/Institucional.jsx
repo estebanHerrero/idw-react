@@ -2,8 +2,8 @@
 
 export function Institucional() {
     return (
-        <div className="bg-[#FF8080]  mx-auto px-20 py-16">
-            <h1 className="text-4xl font-bold text-gray-800" mb-8>Acerca de  IDW - Check in</h1>
+        <div className="bg-[#FF8080] mx-auto px-20 py-16">
+            <h1 className="text-4xl font-bold text-gray-800 bg-[#FF8080]">Acerca de  IDW - Check in</h1>
             <div className="grid grid-cols-2">
                 <div></div>
                 <div className="bg-[#FFCF96] px-6 py-6 rounded-xl">

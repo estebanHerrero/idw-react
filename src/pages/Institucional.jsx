@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 export function Institucional() {
@@ -21,3 +22,6 @@ export function Institucional() {
         </div>
     )
 }
+=======
+import Gooter from "./Footer";
+>>>>>>> f959324efe8ea6f37478e35d4cb8a8ade469d841

@@ -17,6 +17,9 @@ export function Header() {
               <li className="mr-4">
                 <a href="/institucional" className="text-gray-700 font-medium hover:text-[#FF8080]">Institucional</a>
               </li>
+              <li className="mr-4">
+                <a href="/alojamiento" className="text-gray-700 font-medium hover:text-[#FF8080]">Alojamiento</a>
+              </li>
               <li>
                 <a href="/contacto" className="text-gray-700 font-medium hover:text-[#FF8080]">Contacto</a>
               </li>

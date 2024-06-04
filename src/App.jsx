@@ -8,6 +8,8 @@ import { SearchBar } from "./components/SearchBar";
 import { Footer } from "./components/Footer";
 
 
+
+
 function App() {
 
 
@@ -17,7 +19,7 @@ function App() {
       <SearchBar />
         <Routes>
           <Route path="/" element={<Inicio />} />
-          <Route path="/Institucional" element={<Institucional />} />
+          <Route path="/Institucional" element={<Institucional />} />      
           <Route path="/contacto" element={<Contacto />} />
         </Routes>
         <Footer />

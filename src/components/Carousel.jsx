@@ -8,6 +8,8 @@ import tracadero from '../assets/especialCaribe/6.png';
 import wyn from '../assets/especialCaribe/1.png';
 import wyn2 from '../assets/especialCaribe/2.png';
 import wyn3 from '../assets/especialCaribe/3.png';
+import { faStar } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
 function Arrow(props) {
@@ -53,7 +55,12 @@ function Carousel() {
           <img src={cadaques} className='relative rounded-2xl w-100' alt="Cadaques"  />
           <div className="absolute top-0 bg-gray-700 opacity-60 p-2 rounded-xl text-[#d9d9d9]">
             <h2 className="font-bold text-2xl">Cadaques Apt</h2>
-            <h4 className="text-xl">Hotel</h4>
+            <h4 className="text-xl">
+              <FontAwesomeIcon icon={faStar} className="text-[#FF8080] h-5" />
+              <FontAwesomeIcon icon={faStar} className="text-[#FF8080] h-5" />
+              <FontAwesomeIcon icon={faStar} className="text-[#FF8080] h-5" />
+              <FontAwesomeIcon icon={faStar} className="text-[#FF8080] h-5" /> Hotel
+            </h4>
             <h5 className="text-base">Entire house, apartment</h5>
             <h5 className="text-base">8.8 - Muy bueno</h5>
           </div>
@@ -62,7 +69,13 @@ function Carousel() {
           <img src={canoa} className='relative rounded-2xl w-100' alt="Canoa" />
           <div className="absolute top-0 bg-gray-700 opacity-60 p-2 rounded-xl text-[#d9d9d9]">
             <h2 className="font-bold text-2xl">Hotel Collection Canoa</h2>
-            <h4 className="text-xl">Hotel</h4>
+            <h4 className="text-xl">
+              <FontAwesomeIcon icon={faStar} className="text-[#FF8080] h-5" />
+              <FontAwesomeIcon icon={faStar} className="text-[#FF8080] h-5" />
+              <FontAwesomeIcon icon={faStar} className="text-[#FF8080] h-5" />
+              <FontAwesomeIcon icon={faStar} className="text-[#FF8080] h-5" />
+              <FontAwesomeIcon icon={faStar} className="text-[#FF8080] h-5" /> Hotel
+            </h4>
             <h5 className="text-base">Tropical paradise, friendly staff</h5>
             <h5 className="text-base">9.2 - Excelente</h5>
           </div>
@@ -71,7 +84,13 @@ function Carousel() {
           <img src={tracadero} className='relative rounded-2xl w-100' alt="Tracadero Hotel" />
           <div className="absolute top-0 bg-gray-700 opacity-60 p-2 rounded-xl text-[#d9d9d9]">
             <h2 className="font-bold text-2xl">Tracadero Beach Resort</h2>
-            <h4 className="text-xl">Hotel</h4>
+            <h4 className="text-xl">
+              <FontAwesomeIcon icon={faStar} className="text-[#FF8080] h-5" />
+              <FontAwesomeIcon icon={faStar} className="text-[#FF8080] h-5" />
+              <FontAwesomeIcon icon={faStar} className="text-[#FF8080] h-5" />
+              <FontAwesomeIcon icon={faStar} className="text-[#FF8080] h-5" />
+              <FontAwesomeIcon icon={faStar} className="text-[#FF8080] h-5" /> Hotel
+            </h4>
             <h5 className="text-base">Friendly service</h5>
             <h5 className="text-base">9.0 - Excelente</h5>
           </div>
@@ -80,7 +99,11 @@ function Carousel() {
           <img src={wyn}  className='relative rounded-2xl' alt="Wyndhall" />
           <div className="absolute top-0 bg-gray-700 opacity-60 p-2 rounded-xl text-[#d9d9d9]">
             <h2 className="font-bold text-2xl">Wyndham</h2>
-            <h4 className="text-xl">Hotel</h4>
+            <h4 className="text-xl">
+              <FontAwesomeIcon icon={faStar} className="text-[#FF8080] h-5" />
+              <FontAwesomeIcon icon={faStar} className="text-[#FF8080] h-5" />
+              <FontAwesomeIcon icon={faStar} className="text-[#FF8080] h-5" /> Hotel
+            </h4>
             <h5 className="text-base">Beachfront Bungalows</h5>
             <h5 className="text-base">7.4 - Bueno</h5>
           </div>
@@ -89,7 +112,12 @@ function Carousel() {
           <img src={wyn2}  className='relative rounded-2xl' alt="Wyndhall" />
             <div className="absolute top-0 bg-gray-700 opacity-60 p-2 rounded-xl text-[#d9d9d9]">
               <h2 className="font-bold text-2xl">Iberostar Hacienda</h2>
-              <h4 className="text-xl">Hotel</h4>
+              <h4 className="text-xl">
+                <FontAwesomeIcon icon={faStar} className="text-[#FF8080] h-5" />
+                <FontAwesomeIcon icon={faStar} className="text-[#FF8080] h-5" />
+                <FontAwesomeIcon icon={faStar} className="text-[#FF8080] h-5" />
+                <FontAwesomeIcon icon={faStar} className="text-[#FF8080] h-5" /> Hotel
+              </h4>
               <h5 className="text-base">Ubicacion frente a la playa</h5>
               <h5 className="text-base">8.9 - Excelente</h5>
             </div>
@@ -98,7 +126,12 @@ function Carousel() {
         <img src={wyn3}  className='relative rounded-2xl' alt="Wyndhall" />
             <div className="absolute top-0 bg-gray-700 opacity-60 p-2 rounded-xl text-[#d9d9d9]">
               <h2 className="font-bold text-2xl">Hilton La Romana</h2>
-              <h4 className="text-xl">Hotel</h4>
+              <h4 className="text-xl">
+                <FontAwesomeIcon icon={faStar} className="text-[#FF8080] h-5" />
+                <FontAwesomeIcon icon={faStar} className="text-[#FF8080] h-5" />
+                <FontAwesomeIcon icon={faStar} className="text-[#FF8080] h-5" />
+                <FontAwesomeIcon icon={faStar} className="text-[#FF8080] h-5" /> Hotel
+              </h4>
               <h5 className="text-base">Entretenimiento nocturno</h5>
               <h5 className="text-base">8.8 - Excelente</h5>
             </div>

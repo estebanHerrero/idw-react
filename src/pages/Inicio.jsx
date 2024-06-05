@@ -6,6 +6,8 @@ import marrioth from '../assets/destinoTendencia/marrioth.png';
 import nhow from '../assets/destinoTendencia/nhow.jpeg';
 import Carousel from '../components/Carousel';
 import { CardsInspiracion } from '../components/CardsInspiracion';
+import { faStar } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
 
@@ -28,7 +30,13 @@ export function Inicio() {
                         <img src={kimpton} alt="Kimpton Hotel" className="h-full w-full object-cover rounded-3xl" />
                         <div className="absolute top-0 w-full bg-gray-700 opacity-60 p-4 rounded-3xl text-[#d9d9d9]">
                             <h2 className="font-bold text-2xl">Kimpton Fitzroy London</h2>
-                            <h4 className="text-xl">Hotel</h4>
+                            <h4 className="text-xl">
+                                <FontAwesomeIcon icon={faStar} className="text-[#FF8080] h-5" />
+                                <FontAwesomeIcon icon={faStar} className="text-[#FF8080] h-5" />
+                                <FontAwesomeIcon icon={faStar} className="text-[#FF8080] h-5" />
+                                <FontAwesomeIcon icon={faStar} className="text-[#FF8080] h-5" />
+                                <FontAwesomeIcon icon={faStar} className="text-[#FF8080] h-5" /> Hotel
+                            </h4>
                             <h5 className="text-base">Atracciones cerca, buen desayuno</h5>
                             <h5 className="text-base">9.1 - Excelente</h5>
                         </div>
@@ -37,7 +45,13 @@ export function Inicio() {
                         <img src={nhow} alt="nHow Hotel" className="h-full w-full object-cover rounded-3xl" />
                         <div className="absolute top-0 w-full bg-gray-700 opacity-60 p-4 rounded-3xl text-[#d9d9d9]">
                             <h2 className="font-bold text-xl">nHow, London</h2>
-                            <h4 className="text-base">Hotel</h4>
+                            <h4 className="text-base">
+                                <FontAwesomeIcon icon={faStar} className="text-[#FF8080] h-5" />
+                                <FontAwesomeIcon icon={faStar} className="text-[#FF8080] h-5" />
+                                <FontAwesomeIcon icon={faStar} className="text-[#FF8080] h-5" />
+                                <FontAwesomeIcon icon={faStar} className="text-[#FF8080] h-5" />
+                                <FontAwesomeIcon icon={faStar} className="text-[#FF8080] h-5" /> Hotel
+                            </h4>
                             <h5 className="text-base">Staff amigable, delicias culinarias</h5>
                             <h5 className="text-base">9.2 - Excelente</h5>
                         </div>
@@ -46,7 +60,12 @@ export function Inicio() {
                         <img src={presidential} alt="Presidential Hotel" className="h-full w-full object-cover rounded-3xl" />
                         <div className="absolute top-0 w-full bg-gray-700 opacity-60 p-4 rounded-3xl text-[#d9d9d9]">
                             <h2 className="font-bold text-xl">Presidential Apart</h2>
-                            <h4 className="text-base">Hotel</h4>
+                            <h4 className="text-base">
+                                <FontAwesomeIcon icon={faStar} className="text-[#FF8080] h-5" />
+                                <FontAwesomeIcon icon={faStar} className="text-[#FF8080] h-5" />
+                                <FontAwesomeIcon icon={faStar} className="text-[#FF8080] h-5" />
+                                <FontAwesomeIcon icon={faStar} className="text-[#FF8080] h-5" /> Hotel
+                            </h4>
                             <h5 className="text-base">8.2 - Muy bueno</h5>
                         </div>
                     </div>
@@ -54,7 +73,12 @@ export function Inicio() {
                         <img src={kiph} alt="Kip Hotel" className="h-full w-full object-cover rounded-3xl" />
                         <div className="absolute top-0 w-full bg-gray-700 opacity-60 p-4 rounded-3xl text-[#d9d9d9]">
                             <h2 className="font-bold text-xl">Kip Hotel</h2>
-                            <h4 className="text-base">Hotel</h4>
+                            <h4 className="text-base">
+                                <FontAwesomeIcon icon={faStar} className="text-[#FF8080] h-5" />
+                                <FontAwesomeIcon icon={faStar} className="text-[#FF8080] h-5" />
+                                <FontAwesomeIcon icon={faStar} className="text-[#FF8080] h-5" />
+                                <FontAwesomeIcon icon={faStar} className="text-[#FF8080] h-5" /> Hotel
+                            </h4>
                             <h5 className="text-base">Atracciones cerca, opcion de catering</h5>
                             <h5>5 km de Tower Bridge</h5>
                             <h5 className="text-base">8.2 - Muy bueno</h5>
@@ -64,7 +88,12 @@ export function Inicio() {
                         <img src={marrioth} alt="Marriot Hotel" className="h-full w-full object-cover rounded-3xl" />
                         <div className="absolute top-0 w-full bg-gray-700 opacity-60 p-4 rounded-3xl text-[#d9d9d9]">
                             <h2 className="font-bold text-xl">Marriot House</h2>
-                            <h4 className="text-base">Hotel</h4>
+                            <h4 className="text-base">
+                                <FontAwesomeIcon icon={faStar} className="text-[#FF8080] h-5" />
+                                <FontAwesomeIcon icon={faStar} className="text-[#FF8080] h-5" />
+                                <FontAwesomeIcon icon={faStar} className="text-[#FF8080] h-5" />
+                                <FontAwesomeIcon icon={faStar} className="text-[#FF8080] h-5" /> Hotel
+                            </h4>
                             <h5 className="text-base">8.8- Excelente</h5>
                         </div>
                     </div>

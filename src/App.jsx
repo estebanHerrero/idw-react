@@ -6,6 +6,8 @@ import { Contacto } from "./pages/Contacto";
 import { Header } from './components/Header';
 import { SearchBar } from "./components/SearchBar";
 import { Footer } from "./components/Footer";
+import { Alojamiento } from './pages/Alojamiento';
+
 
 
 
@@ -19,7 +21,8 @@ function App() {
       <SearchBar />
         <Routes>
           <Route path="/" element={<Inicio />} />
-          <Route path="/Institucional" element={<Institucional />} />      
+          <Route path="/Institucional" element={<Institucional />} /> 
+          <Route path='/alojamiento' element={<Alojamiento />} />
           <Route path="/contacto" element={<Contacto />} />
         </Routes>
         <Footer />

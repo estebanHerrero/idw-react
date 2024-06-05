@@ -1,0 +1,39 @@
+[
+    {
+      "id": 1,
+      "name": "Kimpton Fitzroy London",
+      "description": "Atracciones cerca, buen desayuno",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "pricePerDay": 250,
+      "rating": 9.2
+    },
+    {
+      "id": 2,
+      "name": "The Cozy Corner Inn",
+      "description": "A charming bed and breakfast in the heart of town.",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "pricePerDay": 120,
+      "rating": 9.1
+    },
+    {
+      "id": 3,
+      "name": "Adventure Lodge",
+      "description": "A rustic retreat nestled amidst the mountains.",
+      "bedrooms": 4,
+      "bathrooms": 2,
+      "pricePerDay": 180,
+      "rating": 9.3
+    },
+    {
+      "id": 4,
+      "name": "City Lights Hotel",
+      "description": "A modern hotel with panoramic city views.",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "pricePerDay": 150,
+      "rating": 9.0
+    }
+  ]
+  

@@ -5,11 +5,8 @@ import kiph from '../assets/destinoTendencia/kiph.png';
 import marrioth from '../assets/destinoTendencia/marrioth.png';
 import nhow from '../assets/destinoTendencia/nhow.jpeg';
 import Carousel from '../components/Carousel';
-import { CardsInspiracion } from '../components/CardsInspiracion';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
-
 
 
 
@@ -103,7 +100,8 @@ export function Inicio() {
                 <br />
                 <Carousel />
 
-                {/* Inspiracion <CardsInspiracion /> */}
+                {/* Inspiracion <Inspiracion />*/}
+                
                 
                 
             </div>

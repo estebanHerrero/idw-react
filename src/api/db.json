@@ -1,0 +1,34 @@
+{
+    "alojamientos": [
+        {
+            "id": 1,
+            "nombre": "Kimpton Fitrozy",
+            "tipo": "Hotel",
+            "descripcion": "Atracciones cerca, buen desayuno",
+            "cantidad de dormitorios": 2,
+            "cantidad de baños": 1,
+            "precio por dia": 180,
+            "valoracion": 9.0
+        },
+        {
+            "id": 2,
+            "nombre": "nHow",
+            "tipo": "Hotel",
+            "descripcion": "Staff amigable, delicias culinarias",
+            "cantidad de dormitorios": 3,
+            "cantidad de baños": 2,
+            "precio por dia": 220,
+            "valoracion": 9.2
+        },
+        {
+            "id": 3,
+            "nombre": "Kip",
+            "tipo": "Hotel",
+            "descripcion": "Atracciones cerca, opcion de catering",
+            "cantidad de dormitorios": 1,
+            "cantidad de baños": 1,
+            "precio por dia": 110,
+            "valoracion": 9.3
+        }
+    ]
+}

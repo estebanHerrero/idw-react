@@ -35,20 +35,29 @@ const CrudAPI = () => {
         ])
     }
 
-   const deleteAlojamiento = id => {
-    const isDelete = window.confirm('¿Realmente desear eliminar el registro con id: ${id}?')
+    const [editData, setEditData] = useState(null);
 
-    if (isDelete) {
-        const newAlojamientos = alojamientos.filter(el => el.id != id)
-        setAlojamientos(newAlojamientos);
+
+    const editAlojamiento = (alojamiento) => {
+        const newAlojamientos = alojamientos.map(el => el.id == alojamiento.id ? alojamiento : el)
+        setAlojamientos(newAlojamientos)
+        setEditData(null)
     }
-   }
+
+    const deleteAlojamiento = id => {
+        const isDelete = window.confirm('¿Realmente desear eliminar el registro con id: ${id}?')
+
+        if (isDelete) {
+            const newAlojamientos = alojamientos.filter(el => el.id != id)
+            setAlojamientos(newAlojamientos);
+        }
+    }
 
     return <>
             <div>
                 <h1 className="text-4xl font-bold text-gray-800 mb-8 text-center">CRUD de Alojamientos</h1>
-                <CrudForm addAlojamiento={addAlojamiento} />  
-                <CrudTable alojamientos={alojamientos} deleteAlojamiento={deleteAlojamiento} /> 
+                <CrudForm addAlojamiento={addAlojamiento} editAlojamiento={editAlojamiento} editData={editData} />  
+                <CrudTable alojamientos={alojamientos} deleteAlojamiento={deleteAlojamiento} setEditData={setEditData} /> 
             </div>
         </>
     }

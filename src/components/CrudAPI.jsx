@@ -1,18 +1,31 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import CrudForm from './crud/CrudForm';
 import CrudTable from './crud/CrudTable';
 
 
 const baseDatos = [
-    {alojamiento: 'Kimpton Fitroy', tipo: 'Hotel', descripcion: 'Atracciones cerca, buen desayuno', cdormitorios: 2, cbaños: 1, ppdia: 180, valoracion: 9.1},
-    {alojamiento: 'nHow', tipo: 'Hotel', descripcion: 'Staff amigable, delicias culinarias', cdormitorios: 3, cbaños: 1, ppdia: 180, valoracion: 9.2},
-    {alojamiento: 'Kip', tipo: 'Hotel', descripcion: 'Atracciones cerca, opcion de catering', cdormitorios: 2, cbaños: 1, ppdia: 180, valoracion: 8.2},
+    { id:1, alojamiento: 'Kimpton Fitroy', tipo: 'Hotel', descripcion: 'Atracciones cerca, buen desayuno', cdormitorios: 2, cbaños: 1, ppdia: 180, valoracion: 9.1},
+    { id:2, alojamiento: 'nHow', tipo: 'Hotel', descripcion: 'Staff amigable, delicias culinarias', cdormitorios: 3, cbaños: 1, ppdia: 180, valoracion: 9.2},
+    { id:3, alojamiento: 'Kip', tipo: 'Hotel', descripcion: 'Atracciones cerca, opcion de catering', cdormitorios: 2, cbaños: 1, ppdia: 180, valoracion: 8.2},
 ]
 
 
 const CrudAPI = () => {
 
-    const [alojamientos, setAlojamientos] = useState(baseDatos);
+    const [alojamientos, setAlojamientos] = useState(() => { 
+        const saveAlojamientos = window.localStorage.getItem("alojamientosData");
+        if (saveAlojamientos) {
+            return JSON.parse(saveAlojamientos);
+        } else {
+            return []
+        }
+    });
+
+    useEffect(() => {
+        window.localStorage.setItem("alojamientosData", JSON.stringify(alojamientos))
+    }, [alojamientos])
+        
+    
 
 
     const addAlojamiento = (alojamiento) => {
@@ -22,11 +35,20 @@ const CrudAPI = () => {
         ])
     }
 
+   const deleteAlojamiento = id => {
+    const isDelete = window.confirm('¿Realmente desear eliminar el registro con id: ${id}?')
+
+    if (isDelete) {
+        const newAlojamientos = alojamientos.filter(el => el.id != id)
+        setAlojamientos(newAlojamientos);
+    }
+   }
+
     return <>
             <div>
                 <h1 className="text-4xl font-bold text-gray-800 mb-8 text-center">CRUD de Alojamientos</h1>
                 <CrudForm addAlojamiento={addAlojamiento} />  
-                <CrudTable alojamientos={alojamientos} /> 
+                <CrudTable alojamientos={alojamientos} deleteAlojamiento={deleteAlojamiento} /> 
             </div>
         </>
     }

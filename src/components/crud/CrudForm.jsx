@@ -1,7 +1,6 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
-const CrudForm = ({ addAlojamiento }) => {
-
+const CrudForm = ({ addAlojamiento, editAlojamiento, editData }) => {
 
     const [formData, setFormData] = useState({
         id: null,
@@ -15,20 +14,47 @@ const CrudForm = ({ addAlojamiento }) => {
     })
 
 
+    useEffect(() => {
+        if (editData != null) {
+            setFormData(editData)
+        } else { 
+            setFormData ({
+                id: null,
+                alojamiento: '',
+                tipo: '',
+                descripcion: '',
+                cdormitorios: '',
+                cbaños: '',
+                ppdia: '',
+                valoracion: ''        
+            })
+        }
+    }, [editData])
+
+    
+
     const handleSubmit = (e) => {
         e.preventDefault(); // Para evitar que se recargue la pagina
-        formData.id = Math.floor(Math.random() * 100)
-        addAlojamiento(formData)
-        setFormData({
-            id: null,
-            alojamiento: '',
-            tipo: '',
-            descripcion: '',
-            cdormitorios: '',
-            cbaños: '',
-            ppdia: '',
-            valoracion: ''
-        })
+        
+        if (formData.alojamiento != '' && formData.tipo != '' && formData.descripcion != '')
+            if ( editData != null) {
+                editAlojamiento(formData)
+            } else { 
+                formData.id = Date.now()
+                addAlojamiento(formData)
+                setFormData({
+                id: null,
+                alojamiento: '',
+                tipo: '',
+                descripcion: '',
+                cdormitorios: '',
+                cbaños: '',
+                ppdia: '',
+                valoracion: ''
+            })
+        } else {
+            alert("Por favor ingrese los datos.")
+        }
     }
 
     // actualiza la variable de estado, se ejecuta cada vez que ingresa datos en el input
@@ -57,7 +83,7 @@ const CrudForm = ({ addAlojamiento }) => {
                 <label htmlFor="valoracion" className='text-gray-800'>Valoracion: </label>
                 <input type="number" name='valoracion' onChange={handleChange} value={formData.valoracion} />
                 <div className='flex w-100 mt-12'>
-                    <input type="submit" value="Agregar" className='w-1/2 bg-transparent hover:bg-[#CDFADB] text-gray-700 font-semibold hover:text-gray-800 py-2 px-6 border border-gray-700 hover:border-none text-xl border-opacity-50 rounded text-opacity-80 mr-12' />
+                    <input type="submit" value="Enviar" className='w-1/2 bg-transparent hover:bg-[#CDFADB] text-gray-700 font-semibold hover:text-gray-800 py-2 px-6 border border-gray-700 hover:border-none text-xl border-opacity-50 rounded text-opacity-80 mr-12' />
                     <input type="reset" value="Cancelar" className='w-1/2 bg-transparent hover:bg-red-500 text-gray-700 font-semibold hover:text-gray-800 py-2 px-6 border border-gray-700 hover:border-red-500 text-xl border-opacity-50 rounded text-opacity-80' />
                 </div>
             </form>

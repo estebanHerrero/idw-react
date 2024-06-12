@@ -7,7 +7,7 @@ import nhow from '../assets/destinoTendencia/nhow.jpeg';
 import Carousel from '../components/Carousel';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
+import BajateNuestraApp from '../components/BajateNuestraApp';
 
 
 
@@ -100,9 +100,11 @@ export function Inicio() {
                 <br />
                 <Carousel />
 
-                {/* Inspiracion <Inspiracion />*/}
+                {/* Inspiracion */}
                 
-                
+
+                { /* Bajate nuestra app */}
+                <BajateNuestraApp /> 
                 
             </div>
         </div>

@@ -8,6 +8,8 @@ import Carousel from '../components/Carousel';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import BajateNuestraApp from '../components/BajateNuestraApp';
+import Inspirate from '../components/Inspirate';
+
 
 
 
@@ -97,14 +99,13 @@ export function Inicio() {
                 </div>
 
                 {/* Especial Caribe */}
-                <br />
                 <Carousel />
 
-                {/* Inspiracion */}
-                
-
                 { /* Bajate nuestra app */}
-                <BajateNuestraApp /> 
+                <Inspirate />
+
+                 {/* Inspiracion */}
+                 <BajateNuestraApp /> 
                 
             </div>
         </div>

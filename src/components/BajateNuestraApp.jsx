@@ -5,7 +5,7 @@ import { faGooglePlay, faAppStore } from '@fortawesome/free-brands-svg-icons';
 
 const BajateNuestraApp = () => {
   return (
-    <div className='mt-12 container bg-[#FF8080]'>
+    <div className='mt-20 container bg-[#FF8080]'>
         <div className="flex flex-col md:flex-row">
         <div className="w-full md:w-1/2 mb-6 md:mb-0">
           <img src={app} alt="Bajate nuestra app" className="rounded-lg shadow-md drop-shadow-2xl w-96 m-12" />

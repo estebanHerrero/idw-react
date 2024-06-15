@@ -18,7 +18,7 @@
     "@remixicon/react": "^4.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-images": "^1.2.0-beta.7",
+    "react-images": "^0.6.7",
     "react-router-dom": "^6.23.1",
     "react-slick": "^0.30.2",
     "remixicon": "^4.2.0",

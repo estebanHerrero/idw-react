@@ -1,34 +1,54 @@
 {
-    "alojamientos": [
-        {
-            "id": 1,
-            "nombre": "Kimpton Fitrozy",
-            "tipo": "Hotel",
-            "descripcion": "Atracciones cerca, buen desayuno",
-            "cantidad de dormitorios": 2,
-            "cantidad de baños": 1,
-            "precio por dia": 180,
-            "valoracion": 9.0
-        },
-        {
-            "id": 2,
-            "nombre": "nHow",
-            "tipo": "Hotel",
-            "descripcion": "Staff amigable, delicias culinarias",
-            "cantidad de dormitorios": 3,
-            "cantidad de baños": 2,
-            "precio por dia": 220,
-            "valoracion": 9.2
-        },
-        {
-            "id": 3,
-            "nombre": "Kip",
-            "tipo": "Hotel",
-            "descripcion": "Atracciones cerca, opcion de catering",
-            "cantidad de dormitorios": 1,
-            "cantidad de baños": 1,
-            "precio por dia": 110,
-            "valoracion": 9.3
-        }
-    ]
+  "alojamientos": [
+    {
+      "id": 1,
+      "alojamiento": "Kimpton Fitrozy",
+      "tipo": "Hotel",
+      "descripcion": "Atracciones cerca, buen desayuno",
+      "cdormitorios": 2,
+      "cbaños": 1,
+      "ppdia": 180,
+      "valoracion": 9
+    },
+    {
+      "id": 2,
+      "alojamiento": "nHow",
+      "tipo": "Hotel",
+      "descripcion": "Staff amigable, delicias culinarias",
+      "cdormitorios": 3,
+      "cbaños": 2,
+      "ppdia": 220,
+      "valoracion": 9.2
+    },
+    {
+      "id": 3,
+      "alojamiento": "Kip",
+      "tipo": "Hotel",
+      "descripcion": "Atracciones cerca, opcion de catering",
+      "cdormitorios": 1,
+      "cbaños": 1,
+      "ppdia": 110,
+      "valoracion": 9.3
+    },
+    {
+      "id": 1718729717512,
+      "alojamiento": "222",
+      "tipo": "22",
+      "descripcion": "22",
+      "cdormitorios": "22",
+      "cbaños": "2",
+      "ppdia": "2",
+      "valoracion": "2"
+    },
+    {
+      "id": 1718730482692,
+      "alojamiento": "7",
+      "tipo": "7",
+      "descripcion": "7",
+      "cdormitorios": "7",
+      "cbaños": "7",
+      "ppdia": "7",
+      "valoracion": "7"
+    }
+  ]
 }

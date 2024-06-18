@@ -1,57 +1,39 @@
 import React, { useState, useEffect } from 'react';
 import CrudForm from './crud/CrudForm';
 import CrudTable from './crud/CrudTable';
+import { helpFetch } from '../helpers/helpFetch';
 
 
-const baseDatos = [
-    { id:1, alojamiento: 'Kimpton Fitroy', tipo: 'Hotel', descripcion: 'Atracciones cerca, buen desayuno', cdormitorios: 2, cbaños: 1, ppdia: 180, valoracion: 9.1},
-    { id:2, alojamiento: 'nHow', tipo: 'Hotel', descripcion: 'Staff amigable, delicias culinarias', cdormitorios: 3, cbaños: 1, ppdia: 180, valoracion: 9.2},
-    { id:3, alojamiento: 'Kip', tipo: 'Hotel', descripcion: 'Atracciones cerca, opcion de catering', cdormitorios: 2, cbaños: 1, ppdia: 180, valoracion: 8.2},
-]
 
 
 const CrudAPI = () => {
 
-    const [alojamientos, setAlojamientos] = useState(() => { 
-        const saveAlojamientos = window.localStorage.getItem("alojamientosData");
-        if (saveAlojamientos) {
-            return JSON.parse(saveAlojamientos);
-        } else {
-            return []
-        }
-    });
+   const API = helpFetch() 
+   const [editData, setEditData] = useState(null);
+   const [alojamientos, setAlojamientos] = useState([]);
+
+   console.log(API);
 
     useEffect(() => {
-        window.localStorage.setItem("alojamientosData", JSON.stringify(alojamientos))
-    }, [alojamientos])
+        API.get("alojamientos").then((response) => {
+            if (!response.error) setAlojamientos(response)
+        })
+    }, [])
         
-    
-
 
     const addAlojamiento = (alojamiento) => {
-        setAlojamientos([
-            ...alojamientos,
-            alojamiento
-        ])
-    }
-
-    const [editData, setEditData] = useState(null);
-
-
-    const editAlojamiento = (alojamiento) => {
-        const newAlojamientos = alojamientos.map(el => el.id == alojamiento.id ? alojamiento : el)
-        setAlojamientos(newAlojamientos)
-        setEditData(null)
-    }
-
-    const deleteAlojamiento = id => {
-        const isDelete = window.confirm('¿Realmente desear eliminar el registro con id: ${id}?')
-
-        if (isDelete) {
-            const newAlojamientos = alojamientos.filter(el => el.id != id)
-            setAlojamientos(newAlojamientos);
+        const options = {
+            body: alojamiento
         }
+
+        API. post("alojamientos", options).then(response => {
+            if (!response.erreor) setAlojamientos([...alojamientos, alojamiento])
+        })
     }
+
+    const editAlojamiento = (alojamiento) => {}
+
+    const deleteAlojamiento = id => {}
 
     return <>
             <div>

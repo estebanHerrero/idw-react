@@ -83,7 +83,7 @@ const CrudForm = ({ addAlojamiento, editAlojamiento, editData }) => {
                 <label htmlFor="valoracion" className='text-gray-800'>Valoracion: </label>
                 <input type="number" name='valoracion' onChange={handleChange} value={formData.valoracion} />
                 <div className='flex w-100 mt-12'>
-                    <input type="submit" className='w-1/2 bg-transparent hover:bg-[#CDFADB] text-gray-700 font-semibold hover:text-gray-800 py-2 px-6 border border-gray-700 hover:border-none text-xl border-opacity-50 rounded text-opacity-80 mr-12' />PlY Store
+                    <input type="submit" className='w-1/2 bg-transparent hover:bg-[#CDFADB] text-gray-700 font-semibold hover:text-gray-800 py-2 px-6 border border-gray-700 hover:border-none text-xl border-opacity-50 rounded text-opacity-80 mr-12' />
                     <input type="reset" className='w-1/2 bg-transparent hover:bg-red-500 text-gray-700 font-semibold hover:text-gray-800 py-2 px-6 border border-gray-700 hover:border-red-500 text-xl border-opacity-50 rounded text-opacity-80' />
                 </div>
             </form>

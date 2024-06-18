@@ -15,7 +15,7 @@ const CrudTable = ({ alojamientos, deleteAlojamiento, setEditData }) => {
             <td className='p-4 text-gray-700 font-semibold border border-gray-600'>Valoracion</td>
           </tr>
           {
-            alojamientos.length == 0 ? <td>No hay datos</td>
+            alojamientos.length == 0 ? <tr><td>No hay datos</td></tr>
             : alojamientos.map((alojamiento, index) => {
               return  <tr key={index}>
                         <td className='border border-gray-600'>{alojamiento.alojamiento}</td>

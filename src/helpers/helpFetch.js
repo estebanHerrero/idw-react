@@ -4,7 +4,7 @@ export const helpFetch = () => {
     const customFetch = (endpoint, options = {}) => {
         options.method = options.method || "GET"
         options.headers = {
-            "content-type": "application/josn"
+            "content-type": "application/json"
         }
 
         if (options.body) {
@@ -31,5 +31,21 @@ export const helpFetch = () => {
         return customFetch(endpoint, options)
     }
 
-    return { get, post }
+    const put = (endpoint, options, id) => { 
+        options.method = "PUT"
+        return customFetch(`${endpoint}/${id}`, options)
+    }
+
+    const del = (endpoint, id) => {
+        const options = {
+            method: "DELETE"
+        }
+        return customFetch(`${endpoint}/${id}`, options)
+    }
+
+    
+
+
+
+    return { get, post, put, del }
 }

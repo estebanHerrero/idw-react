@@ -1,7 +1,7 @@
 {
   "alojamientos": [
     {
-      "id": 1,
+      "id": "1",
       "alojamiento": "Kimpton Fitrozy",
       "tipo": "Hotel",
       "descripcion": "Atracciones cerca, buen desayuno",
@@ -11,7 +11,7 @@
       "valoracion": 9
     },
     {
-      "id": 2,
+      "id": "2",
       "alojamiento": "nHow",
       "tipo": "Hotel",
       "descripcion": "Staff amigable, delicias culinarias",
@@ -21,7 +21,7 @@
       "valoracion": 9.2
     },
     {
-      "id": 3,
+      "id": "3",
       "alojamiento": "Kip",
       "tipo": "Hotel",
       "descripcion": "Atracciones cerca, opcion de catering",
@@ -31,24 +31,24 @@
       "valoracion": 9.3
     },
     {
-      "id": 1718729717512,
-      "alojamiento": "222",
-      "tipo": "22",
-      "descripcion": "22",
-      "cdormitorios": "22",
-      "cbaños": "2",
-      "ppdia": "2",
-      "valoracion": "2"
+      "id": 1718811101922,
+      "alojamiento": "5",
+      "tipo": "5",
+      "descripcion": "5",
+      "cdormitorios": "5",
+      "cbaños": "5",
+      "ppdia": "5",
+      "valoracion": "5"
     },
     {
-      "id": 1718730482692,
-      "alojamiento": "7",
-      "tipo": "7",
-      "descripcion": "7",
-      "cdormitorios": "7",
-      "cbaños": "7",
-      "ppdia": "7",
-      "valoracion": "7"
+      "id": 1718811374575,
+      "alojamiento": "6",
+      "tipo": "6",
+      "descripcion": "6",
+      "cdormitorios": "6",
+      "cbaños": "6",
+      "ppdia": "6",
+      "valoracion": "6"
     }
   ]
 }

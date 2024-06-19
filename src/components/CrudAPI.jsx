@@ -5,14 +5,12 @@ import { helpFetch } from '../helpers/helpFetch';
 
 
 
-
 const CrudAPI = () => {
 
-   const API = helpFetch() 
-   const [editData, setEditData] = useState(null);
-   const [alojamientos, setAlojamientos] = useState([]);
+    const API = helpFetch()
+    const [editData, setEditData] = useState(null);
+    const [alojamientos, setAlojamientos] = useState([]);
 
-   console.log(API);
 
     useEffect(() => {
         API.get("alojamientos").then((response) => {
@@ -20,20 +18,45 @@ const CrudAPI = () => {
         })
     }, [])
         
-
+    //agregar alojamientos
     const addAlojamiento = (alojamiento) => {
+        const options = {
+            body: alojamiento
+        } 
+
+        API.post("alojamientos" , options).then(response => {
+            if (!response.error) setAlojamientos([...alojamientos, alojamiento])
+        })
+    }
+
+    const editAlojamiento = (alojamiento) => {
         const options = {
             body: alojamiento
         }
 
-        API. post("alojamientos", options).then(response => {
-            if (!response.erreor) setAlojamientos([...alojamientos, alojamiento])
+        API.put("alojamientos", options).then(response => {
+            if (!response.error) {
+                const newAlojamientos = alojamientos.map(el => el.id = 
+                alojamiento.id ? alojamiento : el)
+                setAlojamientos(newAlojamientos)
+                setEditData(null)
+            }
         })
     }
 
-    const editAlojamiento = (alojamiento) => {}
 
-    const deleteAlojamiento = id => {}
+    const deleteAlojamiento = id => {
+        const isDelete = window.confirm(`¿Desea eliminar el registro conid: ${id}?`)
+
+        if (isDelete) {
+            API.del("alojamientos", id).then(response => {
+                if (!response.error) {
+                    const newAlojamientos = alojamientos.filter(el => el.id != id)
+                    setAlojamientos(newAlojamientos);
+                }
+            })
+        }
+    }
 
     return <>
             <div>
